@@ -1,8 +1,26 @@
+# Node
 node_modules/
-build/
 dist/
+build/
 coverage/
-.DS_Store
 *.log
-.env*
+.npm/
+
+# Environment Variables
+.env
+.env.*
 !.env.example
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Python / FastAPI
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+*.sqlite3
