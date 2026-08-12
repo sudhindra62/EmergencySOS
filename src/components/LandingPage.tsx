@@ -61,68 +61,92 @@ export default function LandingPage({ onLaunch }: { onLaunch: () => void }) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full text-left animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-1000">
           
           {/* Box 1: Golden Hour Routing */}
-          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-500">
-            {/* Lightning Blur Glow */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-rose-500 via-pink-600 to-red-500 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 group-hover:blur-xl animate-pulse transition-all duration-500" />
-            {/* Hard Lightning Edge */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-rose-500 via-pink-600 to-red-500 rounded-3xl opacity-100 transition-all duration-500" />
+          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-700">
+            {/* Ambient Outer Glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-rose-600 to-pink-600 rounded-[24px] blur-xl opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
             
-            {/* Inner Content Container */}
-            <div className="relative h-full bg-slate-950/95 backdrop-blur-2xl rounded-[22px] p-8 flex flex-col z-10 border border-white/5">
-              <div className="w-14 h-14 bg-gradient-to-br from-rose-500/20 to-pink-500/10 rounded-2xl flex items-center justify-center mb-6 border border-rose-500/30 group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(244,63,94,0.5)] transition-all duration-500">
-                <HeartPulse className="w-7 h-7 text-rose-400" />
+            {/* 1px Gradient Border Wrapper */}
+            <div className="relative h-full p-[1px] rounded-[24px] bg-gradient-to-br from-rose-500/60 via-rose-500/10 to-transparent">
+              {/* Inner Card Body */}
+              <div className="relative h-full bg-[#030712]/95 backdrop-blur-2xl rounded-[23px] p-8 flex flex-col overflow-hidden z-10">
+                
+                {/* Subtle Inner Top Glow for 3D Volume */}
+                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-rose-500/15 to-transparent pointer-events-none" />
+                
+                {/* Glowing Icon Container */}
+                <div className="relative w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mb-6 border border-rose-500/20 group-hover:scale-110 group-hover:bg-rose-500/20 transition-all duration-500 shadow-[0_0_30px_-5px_rgba(244,63,94,0.3)] group-hover:shadow-[0_0_40px_-5px_rgba(244,63,94,0.6)]">
+                  <HeartPulse className="w-7 h-7 text-rose-300 drop-shadow-[0_0_10px_rgba(244,63,94,0.8)]" />
+                </div>
+                
+                {/* Text Content */}
+                <h3 className="text-xl font-bold text-white tracking-wide mb-3">
+                  Golden Hour Routing
+                </h3>
+                <p className="text-sm text-slate-300/90 leading-relaxed font-light">
+                  Real-time PostGIS dispatch engine prioritizing Level 1 Trauma
+                  centers based on AI-assessed injury severity.
+                </p>
               </div>
-              <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-rose-200 mb-3">
-                Golden Hour Routing
-              </h3>
-              <p className="text-sm text-slate-300 leading-relaxed font-medium">
-                Real-time PostGIS dispatch engine prioritizing Level 1 Trauma
-                centers based on AI-assessed injury severity.
-              </p>
             </div>
           </div>
 
           {/* Box 2: Multi-Agent Swarm */}
-          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-500">
-            {/* Lightning Blur Glow */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-600 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 group-hover:blur-xl animate-pulse transition-all duration-500" style={{ animationDelay: '200ms' }} />
-            {/* Hard Lightning Edge */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-600 rounded-3xl opacity-100 transition-all duration-500" />
+          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-700">
+            {/* Ambient Outer Glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[24px] blur-xl opacity-40 group-hover:opacity-80 transition-opacity duration-700" style={{ animationDelay: '200ms' }} />
             
-            {/* Inner Content Container */}
-            <div className="relative h-full bg-slate-950/95 backdrop-blur-2xl rounded-[22px] p-8 flex flex-col z-10 border border-white/5">
-              <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/30 group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] transition-all duration-500">
-                <Bot className="w-7 h-7 text-cyan-400" />
+            {/* 1px Gradient Border Wrapper */}
+            <div className="relative h-full p-[1px] rounded-[24px] bg-gradient-to-br from-cyan-400/60 via-cyan-500/10 to-transparent">
+              {/* Inner Card Body */}
+              <div className="relative h-full bg-[#030712]/95 backdrop-blur-2xl rounded-[23px] p-8 flex flex-col overflow-hidden z-10">
+                
+                {/* Subtle Inner Top Glow for 3D Volume */}
+                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-cyan-500/15 to-transparent pointer-events-none" />
+                
+                {/* Glowing Icon Container */}
+                <div className="relative w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/20 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all duration-500 shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)] group-hover:shadow-[0_0_40px_-5px_rgba(6,182,212,0.6)]">
+                  <Bot className="w-7 h-7 text-cyan-300 drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
+                </div>
+                
+                {/* Text Content */}
+                <h3 className="text-xl font-bold text-white tracking-wide mb-3">
+                  Multi-Agent Swarm
+                </h3>
+                <p className="text-sm text-slate-300/90 leading-relaxed font-light">
+                  10 autonomous agents orchestrating police, ambulance, routing, and
+                  family notifications concurrently.
+                </p>
               </div>
-              <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200 mb-3">
-                Multi-Agent Swarm
-              </h3>
-              <p className="text-sm text-slate-300 leading-relaxed font-medium">
-                10 autonomous agents orchestrating police, ambulance, routing, and
-                family notifications concurrently.
-              </p>
             </div>
           </div>
 
           {/* Box 3: Resilient Edge */}
-          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-500">
-            {/* Lightning Blur Glow */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-600 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 group-hover:blur-xl animate-pulse transition-all duration-500" style={{ animationDelay: '400ms' }} />
-            {/* Hard Lightning Edge */}
-            <div className="absolute -inset-[2px] bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-600 rounded-3xl opacity-100 transition-all duration-500" />
+          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-700">
+            {/* Ambient Outer Glow */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-[24px] blur-xl opacity-40 group-hover:opacity-80 transition-opacity duration-700" style={{ animationDelay: '400ms' }} />
             
-            {/* Inner Content Container */}
-            <div className="relative h-full bg-slate-950/95 backdrop-blur-2xl rounded-[22px] p-8 flex flex-col z-10 border border-white/5">
-              <div className="w-14 h-14 bg-gradient-to-br from-amber-500/20 to-orange-500/10 rounded-2xl flex items-center justify-center mb-6 border border-amber-500/30 group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(251,191,36,0.5)] transition-all duration-500">
-                <Zap className="w-7 h-7 text-amber-400" />
+            {/* 1px Gradient Border Wrapper */}
+            <div className="relative h-full p-[1px] rounded-[24px] bg-gradient-to-br from-amber-400/60 via-amber-500/10 to-transparent">
+              {/* Inner Card Body */}
+              <div className="relative h-full bg-[#030712]/95 backdrop-blur-2xl rounded-[23px] p-8 flex flex-col overflow-hidden z-10">
+                
+                {/* Subtle Inner Top Glow for 3D Volume */}
+                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-amber-500/15 to-transparent pointer-events-none" />
+                
+                {/* Glowing Icon Container */}
+                <div className="relative w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 border border-amber-500/20 group-hover:scale-110 group-hover:bg-amber-500/20 transition-all duration-500 shadow-[0_0_30px_-5px_rgba(245,158,11,0.3)] group-hover:shadow-[0_0_40px_-5px_rgba(245,158,11,0.6)]">
+                  <Zap className="w-7 h-7 text-amber-300 drop-shadow-[0_0_10px_rgba(245,158,11,0.8)]" />
+                </div>
+                
+                {/* Text Content */}
+                <h3 className="text-xl font-bold text-white tracking-wide mb-3">
+                  Resilient Edge
+                </h3>
+                <p className="text-sm text-slate-300/90 leading-relaxed font-light">
+                  Offline cryptography module compressing incident reports to
+                  160-character hashes for remote operations.
+                </p>
               </div>
-              <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-200 mb-3">
-                Resilient Edge
-              </h3>
-              <p className="text-sm text-slate-300 leading-relaxed font-medium">
-                Offline cryptography module compressing incident reports to
-                160-character hashes for remote operations.
-              </p>
             </div>
           </div>
         </div>
