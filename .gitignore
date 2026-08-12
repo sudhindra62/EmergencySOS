@@ -24,4 +24,3 @@ __pycache__/
 venv/
 env/
 *.sqlite3
-package-lock.json
