@@ -58,45 +58,72 @@ export default function LandingPage({ onLaunch }: { onLaunch: () => void }) {
         </button>
 
         {/* Feature Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full text-left animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-1000">
-          <div className="bg-[#050b1f]/60 backdrop-blur-xl border border-white/5 rounded-3xl p-8 hover:bg-[#07102b]/80 transition-colors group">
-            <div className="w-12 h-12 bg-rose-500/10 rounded-2xl flex items-center justify-center mb-6 border border-rose-500/20 group-hover:scale-110 transition-transform">
-              <HeartPulse className="w-6 h-6 text-rose-400" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full text-left animate-in slide-in-from-bottom-12 fade-in duration-1000 delay-1000">
+          
+          {/* Box 1: Golden Hour Routing */}
+          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-500">
+            {/* Lightning Blur Glow */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-rose-500 via-pink-600 to-red-500 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 group-hover:blur-xl animate-pulse transition-all duration-500" />
+            {/* Hard Lightning Edge */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-rose-500 via-pink-600 to-red-500 rounded-3xl opacity-100 transition-all duration-500" />
+            
+            {/* Inner Content Container */}
+            <div className="relative h-full bg-slate-950/95 backdrop-blur-2xl rounded-[22px] p-8 flex flex-col z-10 border border-white/5">
+              <div className="w-14 h-14 bg-gradient-to-br from-rose-500/20 to-pink-500/10 rounded-2xl flex items-center justify-center mb-6 border border-rose-500/30 group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(244,63,94,0.5)] transition-all duration-500">
+                <HeartPulse className="w-7 h-7 text-rose-400" />
+              </div>
+              <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-rose-200 mb-3">
+                Golden Hour Routing
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed font-medium">
+                Real-time PostGIS dispatch engine prioritizing Level 1 Trauma
+                centers based on AI-assessed injury severity.
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-white mb-2">
-              Golden Hour Routing
-            </h3>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              Real-time PostGIS dispatch engine prioritizing Level 1 Trauma
-              centers based on AI-assessed injury severity.
-            </p>
           </div>
 
-          <div className="bg-[#050b1f]/60 backdrop-blur-xl border border-white/5 rounded-3xl p-8 hover:bg-[#07102b]/80 transition-colors group relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 pointer-events-none" />
-            <div className="w-12 h-12 bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 border border-indigo-500/20 group-hover:scale-110 transition-transform relative z-10">
-              <Bot className="w-6 h-6 text-indigo-400" />
+          {/* Box 2: Multi-Agent Swarm */}
+          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-500">
+            {/* Lightning Blur Glow */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-600 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 group-hover:blur-xl animate-pulse transition-all duration-500" style={{ animationDelay: '200ms' }} />
+            {/* Hard Lightning Edge */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-cyan-400 via-indigo-500 to-blue-600 rounded-3xl opacity-100 transition-all duration-500" />
+            
+            {/* Inner Content Container */}
+            <div className="relative h-full bg-slate-950/95 backdrop-blur-2xl rounded-[22px] p-8 flex flex-col z-10 border border-white/5">
+              <div className="w-14 h-14 bg-gradient-to-br from-cyan-500/20 to-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/30 group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] transition-all duration-500">
+                <Bot className="w-7 h-7 text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-cyan-200 mb-3">
+                Multi-Agent Swarm
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed font-medium">
+                10 autonomous agents orchestrating police, ambulance, routing, and
+                family notifications concurrently.
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-white mb-2 relative z-10">
-              Multi-Agent Swarm
-            </h3>
-            <p className="text-sm text-slate-400 leading-relaxed relative z-10">
-              10 autonomous agents orchestrating police, ambulance, routing, and
-              family notifications concurrently.
-            </p>
           </div>
 
-          <div className="bg-[#050b1f]/60 backdrop-blur-xl border border-white/5 rounded-3xl p-8 hover:bg-[#07102b]/80 transition-colors group">
-            <div className="w-12 h-12 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 border border-amber-500/20 group-hover:scale-110 transition-transform">
-              <Zap className="w-6 h-6 text-amber-400" />
+          {/* Box 3: Resilient Edge */}
+          <div className="relative group h-full hover:-translate-y-2 transition-transform duration-500">
+            {/* Lightning Blur Glow */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-600 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 group-hover:blur-xl animate-pulse transition-all duration-500" style={{ animationDelay: '400ms' }} />
+            {/* Hard Lightning Edge */}
+            <div className="absolute -inset-[2px] bg-gradient-to-r from-amber-400 via-orange-500 to-yellow-600 rounded-3xl opacity-100 transition-all duration-500" />
+            
+            {/* Inner Content Container */}
+            <div className="relative h-full bg-slate-950/95 backdrop-blur-2xl rounded-[22px] p-8 flex flex-col z-10 border border-white/5">
+              <div className="w-14 h-14 bg-gradient-to-br from-amber-500/20 to-orange-500/10 rounded-2xl flex items-center justify-center mb-6 border border-amber-500/30 group-hover:scale-110 group-hover:shadow-[0_0_25px_rgba(251,191,36,0.5)] transition-all duration-500">
+                <Zap className="w-7 h-7 text-amber-400" />
+              </div>
+              <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-amber-200 mb-3">
+                Resilient Edge
+              </h3>
+              <p className="text-sm text-slate-300 leading-relaxed font-medium">
+                Offline cryptography module compressing incident reports to
+                160-character hashes for remote operations.
+              </p>
             </div>
-            <h3 className="text-lg font-bold text-white mb-2">
-              Resilient Edge
-            </h3>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              Offline cryptography module compressing incident reports to
-              160-character hashes for remote operations.
-            </p>
           </div>
         </div>
       </div>
