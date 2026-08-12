@@ -1,0 +1,6 @@
+{
+  "name": "RoadGuardian AI",
+  "description": "Agentic AI Emergency Operating System",
+  "requestFramePermissions": ["geolocation", "microphone", "accelerometer", "gyroscope", "magnetometer"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
