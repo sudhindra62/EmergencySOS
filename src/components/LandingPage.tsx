@@ -62,27 +62,30 @@ export default function LandingPage({ onLaunch }: { onLaunch: () => void }) {
           
           {/* Box 1: Golden Hour Routing */}
           <div className="relative group h-full hover:-translate-y-2 transition-transform duration-700">
-            {/* Ambient Outer Glow */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-rose-600 to-pink-600 rounded-[24px] blur-xl opacity-40 group-hover:opacity-80 transition-opacity duration-700" />
+            {/* Massive Ambient Outer Glow */}
+            <div className="absolute -inset-2 bg-gradient-to-r from-rose-600 via-pink-600 to-red-600 rounded-[26px] blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
             
-            {/* 1px Gradient Border Wrapper */}
-            <div className="relative h-full p-[1px] rounded-[24px] bg-gradient-to-br from-rose-500/60 via-rose-500/10 to-transparent">
+            {/* 2px Bright Premium Border Wrapper */}
+            <div className="relative h-full p-[2px] rounded-[26px] bg-gradient-to-br from-rose-400 via-rose-600 to-rose-900/30 group-hover:from-white group-hover:via-rose-400 group-hover:to-rose-800 transition-colors duration-700 shadow-[inset_0_0_20px_rgba(244,63,94,0.3)]">
               {/* Inner Card Body */}
-              <div className="relative h-full bg-[#030712]/95 backdrop-blur-2xl rounded-[23px] p-8 flex flex-col overflow-hidden z-10">
+              <div className="relative h-full bg-gradient-to-br from-[#050b1a] to-[#020512] backdrop-blur-2xl rounded-[24px] p-8 flex flex-col overflow-hidden z-10 shadow-[inset_0_1px_20px_rgba(244,63,94,0.15)] group-hover:shadow-[inset_0_2px_40px_rgba(244,63,94,0.4)] transition-all duration-700">
                 
-                {/* Subtle Inner Top Glow for 3D Volume */}
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-rose-500/15 to-transparent pointer-events-none" />
+                {/* Glossy Top Glass Reflection */}
+                <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+                
+                {/* Intense Inner Top Glow */}
+                <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-rose-500/25 to-transparent pointer-events-none blur-2xl" />
                 
                 {/* Glowing Icon Container */}
-                <div className="relative w-14 h-14 bg-rose-500/10 rounded-2xl flex items-center justify-center mb-6 border border-rose-500/20 group-hover:scale-110 group-hover:bg-rose-500/20 transition-all duration-500 shadow-[0_0_30px_-5px_rgba(244,63,94,0.3)] group-hover:shadow-[0_0_40px_-5px_rgba(244,63,94,0.6)]">
-                  <HeartPulse className="w-7 h-7 text-rose-300 drop-shadow-[0_0_10px_rgba(244,63,94,0.8)]" />
+                <div className="relative w-16 h-16 bg-gradient-to-br from-rose-400/10 to-pink-600/10 rounded-2xl flex items-center justify-center mb-6 border border-rose-300/30 group-hover:scale-110 group-hover:bg-rose-400/20 transition-all duration-500 shadow-[0_0_30px_rgba(244,63,94,0.4)] group-hover:shadow-[0_0_50px_rgba(244,63,94,0.8)] backdrop-blur-md">
+                  <HeartPulse className="w-8 h-8 text-rose-200 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" />
                 </div>
                 
                 {/* Text Content */}
-                <h3 className="text-xl font-bold text-white tracking-wide mb-3">
+                <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white via-rose-100 to-rose-400 mb-3 drop-shadow-sm">
                   Golden Hour Routing
                 </h3>
-                <p className="text-sm text-slate-300/90 leading-relaxed font-light">
+                <p className="text-sm text-rose-100/70 leading-relaxed font-medium">
                   Real-time PostGIS dispatch engine prioritizing Level 1 Trauma
                   centers based on AI-assessed injury severity.
                 </p>
@@ -92,27 +95,30 @@ export default function LandingPage({ onLaunch }: { onLaunch: () => void }) {
 
           {/* Box 2: Multi-Agent Swarm */}
           <div className="relative group h-full hover:-translate-y-2 transition-transform duration-700">
-            {/* Ambient Outer Glow */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-[24px] blur-xl opacity-40 group-hover:opacity-80 transition-opacity duration-700" style={{ animationDelay: '200ms' }} />
+            {/* Massive Ambient Outer Glow */}
+            <div className="absolute -inset-2 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-600 rounded-[26px] blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" style={{ animationDelay: '200ms' }} />
             
-            {/* 1px Gradient Border Wrapper */}
-            <div className="relative h-full p-[1px] rounded-[24px] bg-gradient-to-br from-cyan-400/60 via-cyan-500/10 to-transparent">
+            {/* 2px Bright Premium Border Wrapper */}
+            <div className="relative h-full p-[2px] rounded-[26px] bg-gradient-to-br from-cyan-300 via-cyan-500 to-blue-900/40 group-hover:from-white group-hover:via-cyan-400 group-hover:to-blue-800 transition-colors duration-700 shadow-[inset_0_0_20px_rgba(6,182,212,0.3)]">
               {/* Inner Card Body */}
-              <div className="relative h-full bg-[#030712]/95 backdrop-blur-2xl rounded-[23px] p-8 flex flex-col overflow-hidden z-10">
+              <div className="relative h-full bg-gradient-to-br from-[#050b1a] to-[#020512] backdrop-blur-2xl rounded-[24px] p-8 flex flex-col overflow-hidden z-10 shadow-[inset_0_1px_20px_rgba(6,182,212,0.15)] group-hover:shadow-[inset_0_2px_40px_rgba(6,182,212,0.4)] transition-all duration-700">
                 
-                {/* Subtle Inner Top Glow for 3D Volume */}
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-cyan-500/15 to-transparent pointer-events-none" />
+                {/* Glossy Top Glass Reflection */}
+                <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+                
+                {/* Intense Inner Top Glow */}
+                <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-cyan-500/25 to-transparent pointer-events-none blur-2xl" />
                 
                 {/* Glowing Icon Container */}
-                <div className="relative w-14 h-14 bg-cyan-500/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-500/20 group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all duration-500 shadow-[0_0_30px_-5px_rgba(6,182,212,0.3)] group-hover:shadow-[0_0_40px_-5px_rgba(6,182,212,0.6)]">
-                  <Bot className="w-7 h-7 text-cyan-300 drop-shadow-[0_0_10px_rgba(6,182,212,0.8)]" />
+                <div className="relative w-16 h-16 bg-gradient-to-br from-cyan-400/10 to-blue-600/10 rounded-2xl flex items-center justify-center mb-6 border border-cyan-300/30 group-hover:scale-110 group-hover:bg-cyan-400/20 transition-all duration-500 shadow-[0_0_30px_rgba(6,182,212,0.4)] group-hover:shadow-[0_0_50px_rgba(6,182,212,0.8)] backdrop-blur-md">
+                  <Bot className="w-8 h-8 text-cyan-200 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" />
                 </div>
                 
                 {/* Text Content */}
-                <h3 className="text-xl font-bold text-white tracking-wide mb-3">
+                <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white via-cyan-100 to-cyan-400 mb-3 drop-shadow-sm">
                   Multi-Agent Swarm
                 </h3>
-                <p className="text-sm text-slate-300/90 leading-relaxed font-light">
+                <p className="text-sm text-cyan-100/70 leading-relaxed font-medium">
                   10 autonomous agents orchestrating police, ambulance, routing, and
                   family notifications concurrently.
                 </p>
@@ -122,27 +128,30 @@ export default function LandingPage({ onLaunch }: { onLaunch: () => void }) {
 
           {/* Box 3: Resilient Edge */}
           <div className="relative group h-full hover:-translate-y-2 transition-transform duration-700">
-            {/* Ambient Outer Glow */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-[24px] blur-xl opacity-40 group-hover:opacity-80 transition-opacity duration-700" style={{ animationDelay: '400ms' }} />
+            {/* Massive Ambient Outer Glow */}
+            <div className="absolute -inset-2 bg-gradient-to-r from-amber-500 via-orange-500 to-yellow-600 rounded-[26px] blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-700" style={{ animationDelay: '400ms' }} />
             
-            {/* 1px Gradient Border Wrapper */}
-            <div className="relative h-full p-[1px] rounded-[24px] bg-gradient-to-br from-amber-400/60 via-amber-500/10 to-transparent">
+            {/* 2px Bright Premium Border Wrapper */}
+            <div className="relative h-full p-[2px] rounded-[26px] bg-gradient-to-br from-amber-300 via-amber-500 to-orange-900/40 group-hover:from-white group-hover:via-amber-400 group-hover:to-orange-800 transition-colors duration-700 shadow-[inset_0_0_20px_rgba(245,158,11,0.3)]">
               {/* Inner Card Body */}
-              <div className="relative h-full bg-[#030712]/95 backdrop-blur-2xl rounded-[23px] p-8 flex flex-col overflow-hidden z-10">
+              <div className="relative h-full bg-gradient-to-br from-[#050b1a] to-[#020512] backdrop-blur-2xl rounded-[24px] p-8 flex flex-col overflow-hidden z-10 shadow-[inset_0_1px_20px_rgba(245,158,11,0.15)] group-hover:shadow-[inset_0_2px_40px_rgba(245,158,11,0.4)] transition-all duration-700">
                 
-                {/* Subtle Inner Top Glow for 3D Volume */}
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-amber-500/15 to-transparent pointer-events-none" />
+                {/* Glossy Top Glass Reflection */}
+                <div className="absolute top-0 left-0 w-full h-[40%] bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
+                
+                {/* Intense Inner Top Glow */}
+                <div className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-amber-500/25 to-transparent pointer-events-none blur-2xl" />
                 
                 {/* Glowing Icon Container */}
-                <div className="relative w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 border border-amber-500/20 group-hover:scale-110 group-hover:bg-amber-500/20 transition-all duration-500 shadow-[0_0_30px_-5px_rgba(245,158,11,0.3)] group-hover:shadow-[0_0_40px_-5px_rgba(245,158,11,0.6)]">
-                  <Zap className="w-7 h-7 text-amber-300 drop-shadow-[0_0_10px_rgba(245,158,11,0.8)]" />
+                <div className="relative w-16 h-16 bg-gradient-to-br from-amber-400/10 to-orange-600/10 rounded-2xl flex items-center justify-center mb-6 border border-amber-300/30 group-hover:scale-110 group-hover:bg-amber-400/20 transition-all duration-500 shadow-[0_0_30px_rgba(245,158,11,0.4)] group-hover:shadow-[0_0_50px_rgba(245,158,11,0.8)] backdrop-blur-md">
+                  <Zap className="w-8 h-8 text-amber-200 drop-shadow-[0_0_15px_rgba(255,255,255,0.8)]" />
                 </div>
                 
                 {/* Text Content */}
-                <h3 className="text-xl font-bold text-white tracking-wide mb-3">
+                <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white via-amber-100 to-amber-400 mb-3 drop-shadow-sm">
                   Resilient Edge
                 </h3>
-                <p className="text-sm text-slate-300/90 leading-relaxed font-light">
+                <p className="text-sm text-amber-100/70 leading-relaxed font-medium">
                   Offline cryptography module compressing incident reports to
                   160-character hashes for remote operations.
                 </p>
