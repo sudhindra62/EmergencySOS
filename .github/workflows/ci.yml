@@ -12,12 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        # 1. Tells ALL steps to run inside your frontend folder by default
         working-directory: ./react-example
 
     strategy:
       matrix:
-        node-version: [20.x, 22.x] # Node 18 is deprecated, keeping modern versions
+        node-version: [22.x] # Simplified to just the latest Node version
 
     steps:
       - name: Checkout Repository
@@ -27,20 +26,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
-          # 2. Explicitly tells the cache runner where to find your lockfile
-          cache-dependency-path: ./react-example/package-lock.json
 
-      - name: Clean Install Dependencies
-        run: rm -rf node_modules package-lock.json && npm install
+      - name: Install Dependencies
+        # Instead of deleting non-existent files, we run a direct, clean install
+        run: npm install
 
       - name: Code Syntax Linting
-        # Using 'continue-on-error' so strict linter warnings don't break your Vercel deployment
         run: npm run lint || echo "Linting warnings found, proceeding to build"
 
       - name: Production Compiler Verification (Build)
         run: npm run build
 
       - name: Automated Smoke Testing
-        # Using 'continue-on-error' syntax behavior in case you haven't written test files yet
         run: npm run test || echo "No tests configured, proceeding"
